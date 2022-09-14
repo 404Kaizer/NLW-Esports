@@ -4,6 +4,7 @@
     box-sizing: border-box;
     color: white;
     font-family: 'Inter', sans-serif;
+    line-height: 160%;
     margin: 0;
     padding: 0;
 }
@@ -14,18 +15,17 @@ body {
     background-size: 100% auto;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 32px;
 }
 
 header {
-    
+    display: flex;
+    justify-content: center;
+    margin: 32px;
+
     div {
         width: 128px;
         height: 128px;
-        border-radius: 100%;
+        border-radius: 50%;
         background-image: linear-gradient(to right, #9572FC, #43E7AD, #E2D45C);
         display: flex;
         justify-content: center;
@@ -33,48 +33,56 @@ header {
 
         .my-photo {
             width: 120px;
-            height: 120px;
-            border-radius: 100%;
+            border-radius: 50%;
         }
     }
 }
 
 main {
+    max-width: 580px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
 
     .section-container {
         width: 580px;
-        height: auto;
-        margin: 24px;
         border-radius: 8px;
         background-image: linear-gradient(to right, #9572FC, #43E7AD, #E2D45C);
     
         .card-container {
             padding: 32px;
+            padding-top: 24px;
             position: relative;
             top: 4px;
             border-radius: 8px;
             background-color: #2A2634;
     
             h2 {
-                font-size: 24px;
-                font-weight: 900;
+                letter-spacing: -0.47px;
                 margin-bottom: 10px;
             }
 
             p {
                 font-size: 16px;
-                font-weight: 400;
+                letter-spacing: -0.18px;
                 color: #A1A1AA;
             }
 
-            .lists {
+            ul {
                 display: flex;
-                align-items: left;
+                column-gap: 16px;
                 margin-top: 24px;
                 list-style-type: none;
-                
+
                 li {
-                    margin-right: 16px;
+
+                    img {
+                        display: flex;
+                    }
                 }
             }
 
@@ -96,8 +104,7 @@ main {
 
                     img {
                         width: 70px;
-                        height: 70px;
-                        border-radius: 100%;
+                        border-radius: 50%;
                         border: 1px solid #443E54;
                     }
                 }
@@ -109,7 +116,6 @@ main {
 
                     img {
                         width: 32px;
-                        height: 32px;
                     }
                 }
             }
