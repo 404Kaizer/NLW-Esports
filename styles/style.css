@@ -68,6 +68,7 @@ main .section-container .card-container p {
 }
 main .section-container .card-container ul {
   display: flex;
+  flex-wrap: wrap;
   -moz-column-gap: 16px;
        column-gap: 16px;
   margin-top: 24px;
