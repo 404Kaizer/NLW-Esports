@@ -76,6 +76,7 @@ main .section-container .card-container .channels-list a img {
   width: 70px;
   height: 70px;
   border-radius: 100%;
+  border: 1px solid #443E54;
 }
 main .section-container .card-container .social-list a img {
   width: 32px;
