@@ -42,7 +42,7 @@ main .section-container {
   background-image: linear-gradient(to right, #9572FC, #43E7AD, #E2D45C);
 }
 main .section-container .card-container {
-  padding: 24px 32px;
+  padding: 32px;
   position: relative;
   top: 4px;
   border-radius: 8px;
